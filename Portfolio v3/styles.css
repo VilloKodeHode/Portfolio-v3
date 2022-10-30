@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  /* font-family: "Kanit", "PT Sans", "Calibri", "sans-serif"; */
+  /* font-family: "Julius Sans One", sans-serif; */
+  /* font-family: "Noto Sans JP", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+
+  /* alt style background */
+  /* background-image: url("/images/Background_1.avif");
+  background-size: cover;
+  background-blend-mode: color-dodge; */
+  /* background-color: rgb(51, 57, 138); */
+
+  /* elegant-style background */
+  background-color: #e3e3e3;
+
+  /* background with lines (does not work yet) */
+  /* background-image: url("/images/Background_1.avif");
+  background-blend-mode: color-dodge;
+  background-size: 100px;
+  border: 2px #aaae8e solid; */
+}
+
+/* background with lines (does not work yet) */
+/* .background {
+  position: absolute;
+  z-index: 0;
+  width: 80px;
+  height: 80px;
+  border: 2px black solid;
+  border-radius: 30px;
+} */
+
+/*//////////////////////////////////////////////////////////////*/
+/* Typograhpy */
+/*//////////////////////////////////////////////////////////////*/
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* font-family: "Kanit", "PT Sans", "Calibri", "sans-serif"; */
+  text-decoration-line: underline;
+}
+
+h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-inline: 50px;
+  line-height: 2;
+}
+
+p {
+  padding-left: 20px;
+  margin: 5px 20px 30px 0;
+  min-width: 220px;
+}
+
+span {
+  font-size: 1.3em;
+  color: #828e82;
+  text-decoration: underline;
+}
+
+/* .text_style_1 {
+} */
+
+img {
+  float: right;
+  height: 150px;
+  border-radius: 50px 0px;
+  margin: auto;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+/* Navigation section */
+/*//////////////////////////////////////////////////////////////*/
+
+nav {
+  padding: 5px;
+  position: fixed;
+  list-style-type: none;
+  width: 100%;
+  z-index: 3;
+
+  /* alt style nav-bar */
+  /* background-image: url("/images/Background_6.avif");
+  background-color: #6b6b6b;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  box-shadow: 0px 0px 10px 10px rgba(0.7, 0.7, 0.7, 0.7); */
+
+  /* elegant style nav-bar */
+  border-bottom: 1px solid #d3d4cc;
+  background-color: #e0e0e0;
+
+  /* gives floating nav-buttons: */
+  /* border: 0px;
+  background-color: ; */
+}
+
+a {
+  float: left;
+}
+
+nav a {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 2px 0px 2px 10px;
+
+  color: #607b7d;
+  text-decoration: none;
+
+  /* alt style nav-buttons */
+  /* background-image: url("/images/Background_1.avif");
+  background-color: #999999;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  padding: 10px 14px 2px 14px;
+  height: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 0px 0px 3px 1px rgb(51, 57, 138);
+  border-radius: 14px; */
+
+  /* elegant-style nav-buttons */
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px 14px 20px 14px;
+
+  /* font-family: "Kanit", "PT Sans", "Calibri", "sans-serif";
+  padding: 10px 14px 30px 14px; */
+
+  height: 20px;
+  background-color: #e0e0e0;
+  border-left: 1px solid #d3d4cc;
+  border-bottom: 1px solid #d3d4cc;
+  border-radius: 4px;
+}
+
+nav a:active {
+  /* alt style nav-button active effect */
+  /* font-weight: bolder;
+  background-image: url("/images/Background_1.avif");
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  color: rgb(37, 37, 37);
+  background-color: #a7a7a7;
+  border-radius: 14px;
+  transform: scale(1.15);
+  font-weight: bolder; */
+
+  /* elegant style nav-button active effect */
+
+  transform: scale(1.05);
+  color: #3a606e;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  border-radius: 50%;
+  margin: 3px;
+  z-index: 4;
+
+  /* style1 */
+  /* box-shadow: 0px 0px 3px 1px rgb(145, 145, 145); */
+
+  /* style2 */
+  border: 1px solid #d3d4cc;
+}
+
+nav img:hover {
+  /* default: */
+  /* transform: scale(1.1); */
+
+  position: relative;
+  transform: scale(10);
+  transform-origin: top left;
+  border: 0.01px solid #d3d4cc;
+  border-radius: 10%;
+}
+/*//////////////////////////////////////////////////////////////*/
+/* Sections */
+/*//////////////////////////////////////////////////////////////*/
+
+.container {
+  display: grid;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* max-width: 1000px; */
+
+  /* style1: if using same background on all containers */
+  /* background-image: url("/images/Background_1.avif");
+  background-size: cover;
+  background-blend-mode: color-dodge; */
+}
+
+.invisible {
+  /* display: grid; */
+
+  /* background: linear-gradient(
+    to right, */
+  /* #c5c7b7 0%,
+    #d3d4cc 50%,
+    #e0e0e0 50%,
+    #e3e3e3 100% */
+
+  /* #d3d4cc 0%,
+    #e3e3e3 100%
+  ); */
+
+  grid-template-columns: 449.99px 100px 800px;
+  align-content: left;
+  padding: 100px 0px;
+  text-align: left;
+  color: #3a606e;
+  margin-inline: 5%;
+  border-radius: 100px 0px 90px 180px;
+  border-color: #d3d4cc;
+  /* border-left: 5px solid #d3d4cc; */
+  /* border-right: 5px solid #d3d4cc; */
+}
+
+.picturestyle0 img {
+  /* display: grid; */
+  height: 600px;
+  border-radius: 100px 30px 90px 180px;
+  /* border: 0px; */
+  /* border-color: #d3d4cc;
+  border-style: solid; */
+  /* margin: 20px 50px 50px 50px; */
+}
+
+.light {
+  display: block;
+  padding: 20px 50px;
+  background-color: #e0e0e0;
+  color: #607b7d;
+  z-index: 2;
+  border-radius: 100px 10px 200px 10px;
+  border-color: #d3d4cc;
+  border-left: 2px solid #d3d4cc;
+  border-right: 2px solid #d3d4cc;
+
+  /* add background on light containers: */
+  /* background-image: url("/images/Background_1.avif");
+  background-size: cover;
+  background-blend-mode: exclusion; */
+
+  /* add shadow effect so the light containers seems to be above the other containers: */
+  /* box-shadow: 0px 0px 10px 10px rgba(26, 26, 26, 0.7); */
+}
+
+.dark {
+  background-color: #607b7d;
+  color: #e0e0e0;
+  z-index: 1;
+  padding: 30px 70px;
+  border: 2px solid #d3d4cc;
+  border-radius: 10px 200px 10px 200px;
+
+  /* add shadow effect so the dark containers seems to be below the other containers: */
+  /* background-image: url("/images/Background_2.avif");
+  background-size: cover;
+  background-blend-mode: color-dodge; */
+  /* box-shadow: inset 0px 0px 10px 1px rgba(0.7, 0.7, 0.7, 0.7); */
+}
+
+.projects {
+  background-color: #828e82;
+  color: #e0e0e0;
+  z-index: 1;
+  padding: 30px 70px;
+  border: 2px solid #d3d4cc;
+  border-radius: 10px 200px 10px 200px;
+
+  /* style1: background on projects container */
+  /* background-image: url("/images/Background_2.avif");
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  margin: 0 20px 0 20px;
+  box-shadow: inset 0px 0px 10px 1px rgba(0.7, 0.7, 0.7, 0.7); */
+}
+
+/* "Pictures" section */
+
+.img-style1 img {
+  float: none;
+  display: inline-block;
+  height: 150px;
+  border-radius: 10%;
+  border: 3px #d3d4cc solid;
+  margin: 20px 50px 50px 50px;
+}
+
+.img-style1 img:hover {
+  transform: rotate(10deg) scale(1.5);
+  border-color: #3a606e;
+  border-style: dashed;
+}
+
+.img-style1 img:active {
+  transform: rotate(20deg) scale(1.5);
+  border-color: #3a606e;
+  border-style: dashed;
+}
+
+/* Made by: JV */
