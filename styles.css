@@ -11,7 +11,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
 
   /* alt style background */
-  /* background-image: url("/images/Background_1.avif");
+  /* background-image: url("images/Background_1.avif");
   background-size: cover;
   background-blend-mode: color-dodge; */
   /* background-color: rgb(51, 57, 138); */
@@ -20,7 +20,7 @@ body {
   background-color: #e3e3e3;
 
   /* background with lines (does not work yet) */
-  /* background-image: url("/images/Background_1.avif");
+  /* background-image: url("images/Background_1.avif");
   background-blend-mode: color-dodge;
   background-size: 100px;
   border: 2px #aaae8e solid; */
@@ -94,7 +94,7 @@ nav {
   z-index: 3;
 
   /* alt style nav-bar */
-  /* background-image: url("/images/Background_6.avif");
+  /* background-image: url("images/Background_6.avif");
   background-color: #6b6b6b;
   background-size: cover;
   background-blend-mode: color-dodge;
@@ -123,7 +123,7 @@ nav a {
   text-decoration: none;
 
   /* alt style nav-buttons */
-  /* background-image: url("/images/Background_1.avif");
+  /* background-image: url("images/Background_1.avif");
   background-color: #999999;
   background-size: cover;
   background-blend-mode: color-dodge;
@@ -150,7 +150,7 @@ nav a {
 nav a:active {
   /* alt style nav-button active effect */
   /* font-weight: bolder;
-  background-image: url("/images/Background_1.avif");
+  background-image: url("images/Background_1.avif");
   background-size: cover;
   background-blend-mode: color-dodge;
   color: rgb(37, 37, 37);
@@ -190,6 +190,7 @@ nav img:hover {
   border: 0.01px solid #d3d4cc;
   border-radius: 10%;
 }
+
 /*//////////////////////////////////////////////////////////////*/
 /* Sections */
 /*//////////////////////////////////////////////////////////////*/
@@ -202,7 +203,7 @@ nav img:hover {
   /* max-width: 1000px; */
 
   /* style1: if using same background on all containers */
-  /* background-image: url("/images/Background_1.avif");
+  /* background-image: url("images/Background_1.avif");
   background-size: cover;
   background-blend-mode: color-dodge; */
 }
@@ -255,7 +256,7 @@ nav img:hover {
   border-right: 2px solid #d3d4cc;
 
   /* add background on light containers: */
-  /* background-image: url("/images/Background_1.avif");
+  /* background-image: url("images/Background_1.avif");
   background-size: cover;
   background-blend-mode: exclusion; */
 
@@ -272,7 +273,7 @@ nav img:hover {
   border-radius: 10px 200px 10px 200px;
 
   /* add shadow effect so the dark containers seems to be below the other containers: */
-  /* background-image: url("/images/Background_2.avif");
+  /* background-image: url("images/Background_2.avif");
   background-size: cover;
   background-blend-mode: color-dodge; */
   /* box-shadow: inset 0px 0px 10px 1px rgba(0.7, 0.7, 0.7, 0.7); */
@@ -287,7 +288,7 @@ nav img:hover {
   border-radius: 10px 200px 10px 200px;
 
   /* style1: background on projects container */
-  /* background-image: url("/images/Background_2.avif");
+  /* background-image: url("images/Background_2.avif");
   background-size: cover;
   background-blend-mode: color-dodge;
   margin: 0 20px 0 20px;
